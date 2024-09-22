@@ -1742,7 +1742,7 @@ hr::after,
 	width: 100%;
 }
 
-.mySlides img {
+img {
 	width: 100%; /* Ensure images take full width */
 	height: auto; /* Maintain aspect ratio */
 	border-radius: 10px; /* Round the corners of images */
