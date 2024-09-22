@@ -1747,6 +1747,7 @@ img {
 	height: auto; /* Maintain aspect ratio */
 	border-radius: 10px; /* Round the corners of images */
 	object-fit: contain; /* Ensure images fit well */
+	margin-left: 25px;
 }
 
 .prev,
@@ -1755,7 +1756,7 @@ img {
 	position: absolute;
 	top: 50%;
 	width: auto;
-	padding: 16px;
+	padding: 10px;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
 	border: none;
@@ -1775,7 +1776,7 @@ img {
 }
 
 .next {
-	right: 35px;
+	right: 33px;
 }
 .features-image {
 	display: flex;
@@ -1891,3 +1892,57 @@ img {
 	justify-content: center;
 	align-items: center;
   }
+/* Target the Infinix image specifically */
+img[alt="Infinix"] {
+	max-height: 400px; /* Limit the height of the Infinix image for larger screens */
+	object-fit: contain;
+}
+
+/* Responsive design for Infinix image on smaller screens */
+@media (max-width: 1024px) {
+	img[alt="Infinix"] {
+		max-height: 350px; /* Reduce height for tablet screens */
+	}
+}
+
+@media (max-width: 768px) {
+	img[alt="Infinix"] {
+		max-height: 300px; /* Reduce height for mobile devices */
+	}
+}
+
+@media (max-width: 480px) {
+	img[alt="Infinix"] {
+		max-height: 200px; /* Further reduce height for very small screens */
+	}
+}
+@media (max-width: 1024px) {
+    .mySlides img {
+        margin-left: 100px; /* Reduce the left margin for tablet screens */
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mySlides img {
+        margin-left: 5%; /* Further reduce margin for mobile devices */
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mySlides img {
+        margin-left: 15%; /* Remove margin for very small screens */
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .next {
+		right: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .next{
+		right: 15px;
+    }
+}
