@@ -1810,10 +1810,11 @@ img {
     border-radius: 8px;
     cursor: pointer;
     transition: border 0.3s;
+	width:fit-content
   }
   /* Set a fixed width and height for the brand image */
   .brand img {
-    width: 50%;
+    width: 80px;
     height: auto; /* Ensure the aspect ratio is maintained */
     object-fit: contain;
   }
@@ -1882,7 +1883,7 @@ img {
     margin-bottom: 0px;
   }
   .brand-image{
-	width: 50%;
+	/* width: 50%; */
 	align-self: center;
   }
   .mySlides{
